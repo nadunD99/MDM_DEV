@@ -1,0 +1,38 @@
+
+----Developer duties and responsibilities
+1.Researching, designing, implementing and managing software programs
+2.Testing and evaluating new programs
+3.Identifying areas for modification in existing programs and subsequently developing these modifications
+4.Writing and implementing efficient code
+5.Determining operational practicality
+6.Developing quality assurance procedures
+7.Deploying software tools, processes and metrics
+8.Maintaining and upgrading existing systems
+9.Training users
+10.Working closely with other developers, UX designers, business and systems analysts
+
+-------Qualities
+1.Knowledge and interest in computer systems and the latest technologies
+2.The ability to learn new technologies quickly
+3.An analytical mind
+4.The ability to communicate complex procedures to other colleagues
+5.Commercial and business awareness
+6.Good communication skills – both written and verbal
+7.Attention to detail and desire to probe further into data
+
+
+-------------Software Developer top skills & proficiencies:
+
+1.Analalysis
+2.General Programming Skills
+3.Software Design
+4.Software Debugging
+5.Software Documentation
+6.Software Testing
+7.Problem Solving
+8.Teamwork
+9.Software Development Fundamentals
+10.Software Development Process
+11.Software Requirements
+
+

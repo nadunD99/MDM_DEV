@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Devices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- bootstrap -->
+<link
+	href="https://cdn.jsdeliver.net/webjars/bootstrap/4.0.0/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+<!-- jquery -->
+<script
+	src="https://cdn.jsdeliver.net/webjars/jquery/3.4.1/jquery.min.js"
+	th:href="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+<!-- spring core -->
+<link href="../static/css/spring-core.css"
+	th:href="@{css/spring-core.css}" rel="stylesheet" media="screen" />
+
+</head>
+<body>
+	<div class="container">
+		<div th:if="${not #lists.isEmpty(devices)}">
+			<h2>Device List</h2>
+			<table class="table table-striped">
+				<tr>
+					<th>Id</th>
+					<th>UUID</th>
+					<th>Name</th>
+					<th>OS</th>
+					<th>OS Version</th>
+					<th>View</th>
+					<th>Update</th>
+					<th>Delete</th>
+				</tr>
+				<tr th:each="device: ${devices}">
+					<td th:text="${device.id}"></td>
+					<td th:text="${device.uuid}"></td>
+					<td th:text="${device.name}"></td>
+					<td th:text="${device.os}"></td>
+					<td th:text="${device.os_version}"></td>
+					
+					<td><a th:href="${'/device/show/'+device.id}">View</a></td>
+					<td><a th:href="${'/device/edit/'+device.id}">edit</a></td>
+					<td><a th:href="${'/device/delete/'+device.id}">Delete</a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+        <div class="col-sm-3">
+            <a href="/device/new">New Product</a>
+        </div>
+    </div>
+	</div>
+</body>
+</html>
