@@ -1084,3 +1084,9 @@ public static void main(String[] args) throws IOException {
 		    }
 
 		 }
+===================================================================
+working commands with expected results
+------------------------------------------------------------------------------------------
+adb shell getprop | Select-String -Pattern '(model)|(version.sdk)|(manufacturer)|(platform)|(serialno)|(product.name)|(brand)'
+
+adb -s K897K99746644 shell getprop | Select-String -Pattern '(model)|(version.sdk)|(manufacturer)|(platform)|(serialno)|(product.name)|(brand)'
